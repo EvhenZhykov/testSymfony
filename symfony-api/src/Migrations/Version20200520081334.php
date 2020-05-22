@@ -22,7 +22,7 @@ final class Version20200520081334 extends AbstractMigration
         $this->addSql('CREATE TABLE reports (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
             file_name VARCHAR(255) NOT NULL,
-            data TEXT NOT NULL,
+            data MEDIUMTEXT NOT NULL,
             created_at DATETIME NOT NULL,
             updated_at DATETIME NOT NULL
         )');
